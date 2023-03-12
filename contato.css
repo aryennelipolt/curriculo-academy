@@ -36,6 +36,11 @@ header img {
 
 }
 
+#menu a {
+    color: black;
+    text-decoration: none;
+}
+
 section {
 
     margin: 50px;
