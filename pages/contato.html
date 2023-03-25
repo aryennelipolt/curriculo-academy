@@ -26,21 +26,21 @@
         </nav>
     </div>
 
-    <form action="">
+    <form onsubmit="event.preventDefault()">
             
         <fieldset>
             <label for="input-nome">Nome</label>
-            <input type="text" name="input-nome" id="input-nome">
+            <input type="text" name="input-nome" id="input-nome" required minlength="2">
         </fieldset>
 
         <fieldset>
             <label for="input-email">E-mail</label>
-            <input type="email" name="input-email" id="input-email">
+            <input type="email" name="input-email" id="input-email" required>
         </fieldset>
 
         <fieldset>
             <label for="input-tel">Telefone</label>
-            <input type="tel" name="input-tel" id="input-tel">
+            <input type="tel" name="input-tel" id="input-tel" placeholder="(81) xxxxx-xxxx" required pattern="^\(\d{2\}) \d{5}-\{4}$" maxlength="15">
         </fieldset>
 
         <fieldset>
@@ -49,14 +49,19 @@
         </fieldset>
 
         <center>
-        <input type="submit" value="ENVIAR" class="button">    
+        <input type="submit" value="ENVIAR" class="button" onclick="enviarFormulario()">    
         </center>
         
     </form>
 
-
     <footer>Desenvolvido por Aryenne Lipolt</footer>
 
-    
+    <script src="script/script.js"></script>
+    <script>
+      window.onload = function() {
+        manipularEventos();
+      }
+    </script>
+
 </body>
 </html>

@@ -1,16 +1,14 @@
 body {
-    
     margin: 0;
-    font-family: 'Roboto', 'sans-serif';    
+    font-family: 'Roboto', 'sans-serif';
+    background-color: #9a0808;    
 }
 
 header {
-
     background-color: #9a0808;
     padding: 50px;
     text-align: center;
-    color: #ffffff; 
-    
+    color: #ffffff;     
 }
 
 .button-menu {
@@ -19,29 +17,23 @@ header {
    
 
 header img {
-
     height: 150px;
-    
+    border-radius: 50%;    
 }
 
   
 #menu {
-
     width: 100%;
     padding: 5px;
     background-color: #982D2D;
     color: #ffffff;
-    margin-bottom: 30px;
-   
-   
+    margin-bottom: 30px;   
 }
 
 #menu nav {
-
     display: flex;
     width: 100%;
     justify-content: space-around;
-
 }
 
 #menu a {
@@ -50,19 +42,15 @@ header img {
 }
 
 section {
-
     margin: 50px;
     padding: 30px;
     border-radius: 25px;
     color: #ffffff;
     background-color: #982D2D;
-
 }
 
-
 footer {
-
-    background-color: #9a0808;
+    background-color: #982D2D;
     padding: 10px;
     text-align: center;
     color: #ffffff;
